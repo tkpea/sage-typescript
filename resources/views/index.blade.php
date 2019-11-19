@@ -2,7 +2,10 @@
 
 @section('content')
   @include('partials.page-header')
+  {{-- TypeScript TEST --}}
+  <div id="typescript-div">
 
+  </div>
   @if (!have_posts())
     <div class="alert alert-warning">
       {{ __('Sorry, no results were found.', 'sage') }}

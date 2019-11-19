@@ -58,6 +58,12 @@ let webpackConfig = {
           { loader: 'buble', options: { objectAssign: 'Object.assign' } },
         ],
       },
+      {  
+        test: /\.ts$/,  
+        loader: 'ts-loader',  
+        exclude: [/node_modules(?![/|\\](bootstrap|foundation-sites))/], 
+     
+      },        
       {
         test: /\.css$/,
         include: config.paths.assets,
